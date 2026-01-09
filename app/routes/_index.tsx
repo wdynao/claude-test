@@ -1,4 +1,13 @@
-function App() {
+import type { MetaFunction } from "react-router";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Studio - Modern Design" },
+    { name: "description", content: "Create beautiful experiences with intuitive tools." },
+  ];
+};
+
+export default function Index() {
   return (
     <div className="app">
       {/* Navigation */}
@@ -90,7 +99,5 @@ function App() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
-
-export default App
